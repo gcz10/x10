@@ -8,8 +8,8 @@ test.describe("Flashcard CRUD flow", () => {
     // Login
     await page.goto("/login");
     await page.getByLabel("Email").fill(TEST_EMAIL);
-    await page.getByLabel("Hasło").fill(TEST_PASSWORD);
-    await page.getByRole("button", { name: "Zaloguj się" }).click();
+    await page.getByLabel("Password").fill(TEST_PASSWORD);
+    await page.getByRole("button", { name: "Log in" }).click();
 
     // Wait for redirect to /generate
     await page.waitForURL("**/generate");
