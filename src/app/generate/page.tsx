@@ -7,7 +7,7 @@ import GenerateButton from "@/components/GenerateButton";
 import FlashcardProposalList from "@/components/FlashcardProposalList";
 import type { FlashcardProposal } from "@/types";
 
-const MIN_LENGTH = 1000;
+const MIN_LENGTH = 100;
 const MAX_LENGTH = 10000;
 
 export default function GeneratePage() {

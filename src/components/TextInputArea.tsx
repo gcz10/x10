@@ -2,7 +2,7 @@
 
 import { Textarea } from "@/components/ui/textarea";
 
-const MIN_LENGTH = 1000;
+const MIN_LENGTH = 100;
 const MAX_LENGTH = 10000;
 
 interface TextInputAreaProps {
@@ -26,7 +26,7 @@ export default function TextInputArea({
         value={value}
         onChange={(e) => onChange(e.target.value)}
         disabled={disabled}
-        placeholder="Wklej tekst, z którego chcesz wygenerować fiszki (1000-10000 znaków)..."
+        placeholder="Wklej tekst, z którego chcesz wygenerować fiszki (100-10000 znaków)..."
         className="min-h-[200px] resize-y"
         aria-label="Tekst źródłowy do generowania fiszek"
       />

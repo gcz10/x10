@@ -45,10 +45,10 @@ export async function POST(request: NextRequest) {
     );
   }
 
-  if (sourceText.length < 1000 || sourceText.length > 10000) {
+  if (sourceText.length < 100 || sourceText.length > 10000) {
     return NextResponse.json(
       {
-        error: `source_text must be between 1000 and 10000 characters. Current length: ${sourceText.length}`,
+        error: `source_text must be between 100 and 10000 characters. Current length: ${sourceText.length}`,
       },
       { status: 400 }
     );
